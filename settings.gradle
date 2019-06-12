@@ -1,0 +1,3 @@
+include ':android', ':SharedLib'
+
+enableFeaturePreview('GRADLE_METADATA')
