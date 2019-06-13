@@ -16,9 +16,7 @@ class WeatherViewController: UIViewController, WeatherContractView {
         super.viewDidLoad()
         
         print(MyClass().getMyPlatformName())
-        
-        let injection = Injection()
-        
+
         self.presenter = injection.weatherPresenter()
         presenter.takeView(view: self)
     }
